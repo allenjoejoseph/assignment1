@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* *{
+    margin: 0;
+    padding:0
+}
+
+.row{
+    padding-left: 7%;
+}
+
+.row{
+    margin-left: 18%;
+    margin-top: 20px;
+} */
+.nav .nav-li{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 90%;
+    font-size: 1.1rem;
+    margin-top: -2.9%;
+    padding-bottom: 3%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav .nav-li a {
+    text-decoration: none;
+    margin-right: 60px;
+    color: rgb(1,113,186);
+    
+    
+}
+
+.nav .img{
+    margin-left: 12px;
+    /* margin-top: 5px; */
+}
