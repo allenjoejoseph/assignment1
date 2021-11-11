@@ -16,14 +16,14 @@
         <h3>Name</h3>
         <input type="text" placeholder="Enter name" id="name" required>
         <h3>Phone</h3>
-        <input type="number" placeholder="Enter number" id="number" required>
+        <input type="text" placeholder="Enter number" id="number" required>
         <h3>Email</h3>
         <input type="text" placeholder="Enter email" id="mail" required>
         <h3>Password</h3>
         <input type="password" placeholder="Enter password" id="pwd" required>
         <br>
-        <br>
-        <button id="submit" value="LOGIN">Create Account</button>
+        <br> 
+        <button id="submit" value="LOGIN" onclick="phoneValidate(document.signup.number)">Create Account</button>
     </form>
     <script type="text/javascript" src="./form.js"></script>
 </body>
