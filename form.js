@@ -19,6 +19,17 @@ function validate(){
     else{
         return true
     }
+    
+    var regEx = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
+   if(num.value.match(regEx))
+     {
+      return true;
+     }
+   else
+     {
+     alert("Please enter a valid phone number.");
+     return false;
+     }
 }
 
 
