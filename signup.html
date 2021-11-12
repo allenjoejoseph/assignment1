@@ -6,6 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Here</title>
     <link rel="stylesheet" href="./css/signup.css">
+    <script>
+        let num = document.getElementById("number");
+        let mail = document.getElementById("mail");
+        let pwd = document.getElementById("pass");
+
+
+        function validate(){
+            if(mail.value.trim()==""){
+                alert("Email cannot be empty");
+                return false;
+            }
+            else if (pwd.value.trim()==""){
+                alert("Password cannot be blank");
+                return false;
+            }
+            else if (pwd.value.length <=3){
+                alert("Password is too short");
+                pwd.style.border="2px solid red";
+                return false;
+            }
+            else if (pwd.value.length <=7){
+                alert("Password is too short");
+                pwd.style.border="2px solid orange";
+                return false;
+            }
+            else if (pwd.value.length >=8){
+                alert("Password is too short");
+                pwd.style.border="2px solid green";
+                return false;
+            }
+            else{
+                return true
+            } 
+        }
+
+        function ppvalidate(){
+            phoneValidate();
+            passwordValidation();
+        }
+
+        function phoneValidate(){
+
+           var a = document.getElementById("number").value;
+           if (a==""){
+               alert("Enter the number");
+               return false;
+           }
+           else if(isNaN(a)){
+               alert("Enter digits only");
+               return false;
+           }
+           else if(a.length<10){
+               alert("Mobile number should be of 10 digits");
+               return false;
+           }
+           else if(a.length>10){
+               alert("Mobile number should be of 10 digits");
+               return false;
+           } 
+           else{
+               return true
+           }
+        }
+
+        function passwordValidation(){
+            var p = document.getElementById("pass").value;
+            if(p.match(/[A-Z]/)){
+                return true,
+            }
+            else if(p.match(/[a-z]/)){
+                return true,
+            }
+            else if(p.match(/[0-9]/)){
+                return true;
+            }
+            else{
+                alert("Please add an Uppercase, Lowercase and a number to your Password");
+                return false;
+            }
+
+        }
+   
+    
+    </script>
 </head>
 <body background="./si-bg.jpg">
     <nav class="nav">
@@ -23,8 +107,7 @@
         <input type="password" placeholder="Enter password" id="pass" required>
         <br>
         <br> 
-        <button id="submit" value="Sign-Up" onclick="return phoneValidate()">Create Account</button>
+        <button id="submit" value="Sign-Up" onclick="return phoneValidate(); passwordValidation();">Create Account</button>
     </form>
-    <script type="text/javascript" src="./form.js"></script>
 </body>
 </html>
