@@ -26,7 +26,7 @@ body{
     padding-right: 40px;
     padding-left: 43px;
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
     /* border: solid 0.2rem black; */
 }
 
@@ -47,8 +47,8 @@ h3{
 }
 
 .signup input{
-        width : 100%;
-        padding : 10px;
+        width : 50%;
+        padding : 5px;
         box-sizing: border-box;
 
 }
