@@ -18,22 +18,28 @@ function validate(){
     }
     else{
         return true
-    }
-    
-    var s = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
-   if(num.value.match(s))
-     {
-      return true;
-     }
-   else
-     {
-     alert("Please enter a valid phone number.");
-     return false;
-     }
+    } 
 }
  
-function phoneValidate(num){
+function phoneValidate(){
    
+   var a = document.getElementById("number").value;
+   if (a==""){
+       alert("Enter the number");
+       return false;
+   }
+   if(isNaN(a)){
+       alert("Enter digits only");
+       return false;
+   }
+   if(a.length<10){
+       alert("Mobile number should be of 10 digits");
+       return false;
+   }
+   if(a.length>10){
+       alert("Mobile number should be of 10 digits");
+       return false;
+   } 
 }
 
 
