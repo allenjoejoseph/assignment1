@@ -12,9 +12,19 @@ function validate(){
         alert("Password cannot be blank");
         return false;
     }
-    else if (pwd.value.length <=8){
+    else if (pwd.value.length <=3){
         alert("Password is too short");
         pwd.style.border="2px solid red";
+        return false;
+    }
+    else if (pwd.value.length <=7){
+        alert("Password is too short");
+        pwd.style.border="2px solid orange";
+        return false;
+    }
+    else if (pwd.value.length >=8){
+        alert("Password is too short");
+        pwd.style.border="2px solid green";
         return false;
     }
     else{
