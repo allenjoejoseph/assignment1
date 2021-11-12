@@ -31,7 +31,12 @@ function validate(){
         return true
     } 
 }
- 
+
+function ppvalidate(){
+    phoneValidate();
+    passwordValidation();
+}
+    
 function phoneValidate(){
    
    var a = document.getElementById("number").value;
