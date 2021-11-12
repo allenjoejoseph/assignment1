@@ -11,7 +11,7 @@
     <nav class="nav">
         <img style="width: 170px;"src="./logo.png" alt="logo">
     </nav>
-    <form action="./index.html" class="signup" onsubmit="return validate()">
+    <form action="./index.html" class="signup" onsubmit="return myfunc()">
         <h1>Signup Here!</h1>
         <h3>Name</h3>
         <input type="text" placeholder="Enter name" id="name" required>
@@ -23,7 +23,7 @@
         <input type="password" placeholder="Enter password" id="pass" required>
         <br>
         <br> 
-        <button id="submit" value="Sign-Up" onclick="return phoneValidate()">Create Account</button>
+        <button id="submit">Create Account</button>
     </form>
     <script type="text/javascript" src="./form.js"></script>
 </body>
