@@ -28,18 +28,21 @@ function phoneValidate(){
        alert("Enter the number");
        return false;
    }
-   if(isNaN(a)){
+   else if(isNaN(a)){
        alert("Enter digits only");
        return false;
    }
-   if(a.length<10){
+   else if(a.length<10){
        alert("Mobile number should be of 10 digits");
        return false;
    }
-   if(a.length>10){
+   else if(a.length>10){
        alert("Mobile number should be of 10 digits");
        return false;
    } 
+   else{
+       return true
+   }
 }
 
 
