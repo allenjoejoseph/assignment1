@@ -19,10 +19,8 @@ function validate(){
     else{
         return true
     }
-}
- 
-function phoneValidate(num){
-   var s = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
+    
+    var s = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
    if(num.value.match(s))
      {
       return true;
@@ -32,6 +30,10 @@ function phoneValidate(num){
      alert("Please enter a valid phone number.");
      return false;
      }
+}
+ 
+function phoneValidate(num){
+   
 }
 
 
