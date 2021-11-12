@@ -3,11 +3,11 @@ let mail = document.getElementById("mail");
 let pwd = document.getElementById("pass");
 
 function validate(){
-    if(mail.value==""){
+    if(mail.value.trim()==""){
         alert("Email cannot be empty");
         return false;
     }
-    else if (pwd.value==""){
+    else if (pwd.value.trim()==""){
         alert("Password cannot be blank");
         return false;
     }
