@@ -1,6 +1,6 @@
 let num = document.getElementById("number");
 let mail = document.getElementById("mail");
-let pwd = document.getElementById("pwd");
+let pwd = document.getElementById("pass");
 
 function validate(){
     if(mail.value==""){
