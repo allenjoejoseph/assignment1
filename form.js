@@ -2,6 +2,12 @@ let num = document.getElementById("number");
 let mail = document.getElementById("mail");
 let pwd = document.getElementById("pass");
 
+function myfunc(){
+validate();
+phoneValidate();
+passwordValidation();
+}
+
 function validate(){
     if(mail.value.trim()==""){
         alert("Email cannot be empty");
@@ -11,7 +17,7 @@ function validate(){
         alert("Password cannot be blank");
         return false;
     }
-    else if (pwd.value.length <=5){
+    else if (pwd.value.length <=8){
         alert("Password is too short");
         pwd.style.border="2px solid red";
         return false;
@@ -45,7 +51,23 @@ function phoneValidate(){
    }
 }
 
+function passwordValidation(){
+    var p = document.getElementById("pass").value;
+    if(p.match(/[A-Z]/)){
+        return true,
+    }
+    else if(p.match(/[a-z]/)){
+        return true,
+    }
+    else if(p.match(/[0-9]/)){
+        return true;
+    }
+    else{
+        alert("Please add an Uppercase, Lowercase and a number to your Password");
+        return false;
+    }
 
+}
 
 
 
