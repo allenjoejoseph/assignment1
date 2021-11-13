@@ -21,19 +21,7 @@
                 alert("Password cannot be blank");
                 return false;
             }
-            else if (pwd.value.length<3){
-                alert("Password is too short");
-                pwd.style.border="2px solid red";
-                return false;
-            }
-            else if (pwd.value.length<7){
-                alert("Password is too short");
-                pwd.style.border="2px solid orange";
-                return false;
-            }
-            else if (pwd.value.length>8){
-                pwd.style.border="2px solid green";
-            }
+            
             else{
                 return true;
             } 
@@ -57,6 +45,19 @@
                alert("Mobile number should be of 10 digits");
                return false;
            } 
+           else if (pwd.value.length<3){
+                alert("Password is too short");
+                pwd.style.border="2px solid red";
+                return false;
+            }
+            else if (pwd.value.length<7){
+                alert("Password is too short");
+                pwd.style.border="2px solid orange";
+                return false;
+            }
+            else if (pwd.value.length>8){
+                pwd.style.border="2px solid green";
+            }
            else{
                return true;
            }
