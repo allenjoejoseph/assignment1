@@ -21,17 +21,17 @@
                 alert("Password cannot be blank");
                 return false;
             }
-            else if (pwd.value.length<=3){
+            else if (pwd.value.length<3){
                 alert("Password is too short");
                 pwd.style.border="2px solid red";
                 return false;
             }
-            else if (pwd.value.length<=7){
+            else if (pwd.value.length<7){
                 alert("Password is too short");
                 pwd.style.border="2px solid orange";
                 return false;
             }
-            else if (pwd.value.length>=8){
+            else if (pwd.value.length>8){
                 pwd.style.border="2px solid green";
                 return true;
             }
@@ -85,7 +85,7 @@
     <nav class="nav">
         <img style="width: 170px;"src="./logo.png" alt="logo">
     </nav>
-    <form action="./index.html" class="signup" onsubmit="return validate()">
+    <form action="./index.html" class="signup" onclick="return validate()">
         <h1>Signup Here!</h1>
         <h3>Name</h3>
         <input type="text" placeholder="Enter name" id="name" required>
