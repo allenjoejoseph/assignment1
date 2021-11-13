@@ -40,13 +40,7 @@
             } 
         }
 
-        function ppvalidate(){
-            phoneValidate();
-            passwordValidation();
-        }
-
         function phoneValidate(){
-
            var a = document.getElementById("number").value;
            if (a==""){
                alert("Enter the number");
@@ -84,10 +78,7 @@
                 alert("Please add an Uppercase, Lowercase and a number to your Password");
                 return false;
             }
-
         }
-   
-    
     </script>
 </head>
 <body background="./si-bg.jpg">
@@ -106,7 +97,7 @@
         <input type="password" placeholder="Enter password" id="pass" required>
         <br>
         <br> 
-        <button id="submit" value="Sign-Up" onsubmit="return phoneValidate()">Create Account</button>
+        <button id="submit" value="Sign-Up" onclick="return phoneValidate()">Create Account</button>
     </form>
 </body>
 </html>
