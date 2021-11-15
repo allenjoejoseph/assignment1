@@ -23,7 +23,7 @@
         <input type="password" placeholder="Enter password" id="pass" required>
         <br>
         <br> 
-        <button id="submit" value="Sign-Up" onclick="return phoneValidate()">Create Account</button>
+        <button id="submit" value="Sign-Up" onclick="return ppvalidate()">Create Account</button>
     </form>
     <script>
         let num = document.getElementById("number");
@@ -45,7 +45,10 @@
                 return true;
             } 
         }
-
+        function ppvalidate(){
+            phoneValildate();
+            passwordValidation();
+        }
         function phoneValidate(){
            var a = document.getElementById("number").value;
            if (a==""){
