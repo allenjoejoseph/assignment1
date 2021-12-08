@@ -30,19 +30,19 @@
            var a = document.getElementById("number").value;
            if (a==""){
                alert("Enter the number");
-               return false;
+               return true;
            }
            else if(isNaN(a)){
                alert("Enter digits only");
-               return false;
+               return true;
            }
            else if(a.length<10){
                alert("Mobile number should be of 10 digits");
-               return false;
+               return true;
            }
            else if(a.length>10){
                alert("Mobile number should be of 10 digits");
-               return false;
+               return true;
            } 
            else if (pwd.value.length<3){
                 alert("Password is too short");
@@ -57,9 +57,6 @@
             else if (pwd.value.length>8){
                 pwd.style.border="2px solid green";
             }
-           else{
-               return true;
-           }
         }
 
         function passwordValidation(){
