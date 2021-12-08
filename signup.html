@@ -6,25 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Here</title>
     <link rel="stylesheet" href="./css/signup.css">
-</head>
-<body background="./si-bg.jpg">
-    <nav class="nav">
-        <img style="width: 170px;"src="./logo.png" alt="logo">
-    </nav>
-    <form action="./index.html" class="signup" onsubmit="return validate()">
-        <h1>Signup Here!</h1>
-        <h3>Name</h3>
-        <input type="text" placeholder="Enter name" id="name" required>
-        <h3>Phone</h3>
-        <input type="number" placeholder="Enter number" class="num" id="number" required>
-        <h3>Email</h3>
-        <input type="text" placeholder="Enter email" id="mail" required>
-        <h3>Password</h3>
-        <input type="password" placeholder="Enter password" id="pass" required>
-        <br>
-        <br> 
-        <button id="submit" value="Sign-Up" onclick="return ppvalidate()">Create Account</button>
-    </form>
     <script>
         let num = document.getElementById("number");
         let mail = document.getElementById("mail");
@@ -102,5 +83,25 @@
             }
         }
     </script>
+</head>
+<body background="./si-bg.jpg">
+    <nav class="nav">
+        <img style="width: 170px;"src="./logo.png" alt="logo">
+    </nav>
+    <form action="./index.html" class="signup" onsubmit="return validate()">
+        <h1>Signup Here!</h1>
+        <h3>Name</h3>
+        <input type="text" placeholder="Enter name" id="name" required>
+        <h3>Phone</h3>
+        <input type="number" placeholder="Enter number" class="num" id="number" required>
+        <h3>Email</h3>
+        <input type="text" placeholder="Enter email" id="mail" required>
+        <h3>Password</h3>
+        <input type="password" placeholder="Enter password" id="pass" required>
+        <br>
+        <br> 
+        <button id="submit" value="Sign-Up" onclick="return ppvalidate()">Create Account</button>
+    </form>
+    
 </body>
 </html>
