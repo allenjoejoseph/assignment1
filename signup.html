@@ -7,9 +7,9 @@
     <title>Signup Here</title>
     <link rel="stylesheet" href="./css/signup.css">
     <script>
-        let num = document.getElementById("number");
-        let mail = document.getElementById("mail");
-        let pwd = document.getElementById("pass");
+        let num = document.forms['signup1']['num'];
+        let mail =  document.forms['signup1']['mail'];
+        let pwd =  document.forms['signup1']['pass'];
 
 
         function validate(){
@@ -85,7 +85,7 @@
     <nav class="nav">
         <img style="width: 170px;"src="./logo.png" alt="logo">
     </nav>
-    <form action="./index.html" class="signup" onsubmit="validate()">
+    <form action="./index.html" class="signup" id ="signup1" onsubmit="validate()">
         <h1>Signup Here!</h1>
         <h3>Name</h3>
         <input type="text" placeholder="Enter name" id="name" required>
